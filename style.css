@@ -109,6 +109,10 @@ main {
     background-image: url(images/single-price-grid-component.png);
 }
 
+.box:nth-child(3) .top {
+    background-image: url(images/testimonials-grid-section.png);
+}
+
 .box .bottom {
     height: 50%;
     width: 100%;
