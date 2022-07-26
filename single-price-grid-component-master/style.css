@@ -2,7 +2,7 @@
     --light-gray: hsl(204, 43%, 93%);
     --grayish-blue: hsl(218, 22%, 67%);
     --cyan: hsl(179, 62%, 43%);
-    --cyan-darker: hsl(179, 62%, 33%);
+    --cyan-lighter: hsl(179, 62%, 53%);
     --bright-yellow: hsl(71, 73%, 54%);
     --white: hsl(0, 0%, 100%);
 }
@@ -36,7 +36,7 @@ p {
 }
 
 h1 {
-    color: var(--cyan-darker);
+    color: var(--cyan);
     font-size: 1.5rem;
     padding-top: 8px;
     padding-bottom: 16px;
@@ -76,7 +76,7 @@ h2 {
 .bottom .left {
     width: 50%;
     padding: 32px;
-    background-color: var(--cyan-darker);
+    background-color: var(--cyan);
     border-bottom-left-radius: 8px;
 }
 
@@ -93,6 +93,10 @@ h2 {
 .cost p:nth-child(2) {
     padding-left: 8px;
     color: hsl(0, 0%, 80%);
+}
+
+.message {
+    padding-bottom: 16px;
 }
 
 .signUpButton {
@@ -114,7 +118,7 @@ h2 {
 .bottom .right {
     width: 50%;
     padding: 32px;
-    background-color: var(--cyan);
+    background-color: var(--cyan-lighter);
     border-bottom-right-radius: 8px;
 }
 

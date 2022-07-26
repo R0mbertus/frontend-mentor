@@ -89,25 +89,24 @@ main {
     height: 400px;
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 12px;
 }
 
 .box .top {
     height: 50%;
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .box:nth-child(1) .top {
     background-image: url(images/product-preview-card-component.png);
-    background-position: center;
-    background-size: cover;
-
 }
 
 .box:nth-child(2) .top {
     background-image: url(images/single-price-grid-component.png);
-    background-position: center;
-    background-size: cover;
-
 }
 
 .box .bottom {
