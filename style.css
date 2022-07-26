@@ -18,7 +18,9 @@ body {
     background-color: var(--off-white);
 }
 
-p, h1 {
+p, 
+h1,
+h2 {
     color: #333;
 }
 
@@ -84,18 +86,37 @@ main {
 
 .box {
     width: min(300px, 30vw);
-    height: 500px;
+    height: 400px;
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .box .top {
-    height: 40%;
+    height: 50%;
     width: 100%;
 }
 
+.box:nth-child(1) .top {
+    background-image: url(images/product-preview-card-component.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.box:nth-child(2) .top {
+    background-image: url(images/single-price-grid-component.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
 .box .bottom {
-    height: 60%;
+    height: 50%;
     width: 100%;
+    padding: 16px;
+}
+
+.box .bottom h2 {
+    padding-bottom: 16px;
 }
 
