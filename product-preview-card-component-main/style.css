@@ -1,0 +1,98 @@
+:root {
+    --body-bg-color: hsl(30, 38%, 92%);
+    --card-bg-color: hsl(0, 0%, 100%);
+    --p-color: hsl(228, 12%, 48%);
+    --h-color: hsl(212, 21%, 14%);
+    --button-color: hsl(158, 36%, 37%);
+    --button-hover-color: hsl(165, 36%, 20%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--body-bg-color);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: var(--p-color);
+}
+
+h1 {
+    color: var(--h-color);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+.card {
+    width: 600px;
+    min-width: 600px;
+    background-color: var(--card-bg-color);
+    border-radius: 16px;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    background-image: url(/images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.right {
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prices h1 {
+    color: var(--button-color)
+}
+
+.prices p {
+    text-decoration: line-through;
+}
+
+.checkout {
+    width: 100%;
+    height: 50px;
+    background-color: var(--button-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout:hover {
+    background-color: var(--button-hover-color);
+}
+
+.checkout p {
+    padding-left: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+
