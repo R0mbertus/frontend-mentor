@@ -1,0 +1,122 @@
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    background-color: var(--light-grayish-blue);
+}
+
+main {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div {
+    display: grid;
+    width: fit-content;
+    gap: 30px;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "box1 box1 box2 box3"
+        "box4 box5 box5 box3";
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 24px 32px;
+}
+
+.box p:nth-child(2) {
+    opacity: 0.5;
+}
+
+.box p:nth-child(3) {
+    opacity: 0.7;
+    line-height: 1.4;
+}
+
+.person {
+    display: flex;
+}
+
+.person img {
+    height: calc(52px - 20px);
+    border-radius: 50%;
+    width: auto;
+    margin-right: 16px;
+}
+
+#box1 {
+    background-color: var(--moderate-violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    grid-area: box1;
+}
+
+#box2 {
+    background-color: var(--very-dark-grayish-blue);
+    grid-area: box2;
+}
+
+#box3 {
+    background-color: #fff;
+    color: var(--very-dark-grayish-blue);
+    grid-area: box3;
+}
+
+#box4 {
+    background-color: #fff;
+    color: var(--very-dark-grayish-blue);
+    grid-area: box4;
+}
+
+#box5 {
+    background-color: var(--very-dark-blackish-blue);
+    grid-area: box5;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    color: var(--very-dark-grayish-blue);
+}
+
+.attribution a {
+    text-decoration: none;
+    padding-left: 0.2rem;
+}
+
+@media only screen and (max-width: 1120px) {
+    main {
+        margin: 48px 0;
+    }
+    main > div {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
