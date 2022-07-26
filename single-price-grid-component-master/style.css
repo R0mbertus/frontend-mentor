@@ -1,0 +1,154 @@
+:root {
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --cyan: hsl(179, 62%, 43%);
+    --cyan-darker: hsl(179, 62%, 33%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Karla', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 16px;
+    color: var(--grayish-blue);
+    padding-bottom: 8px;
+}
+
+h1 {
+    color: var(--cyan-darker);
+    font-size: 1.5rem;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+h2 {
+    font-size: large;
+    padding-bottom: 16px;
+}
+
+.boxContainer {
+    background-color: var(--white);
+    width: 620px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.top {
+    margin: 32px;
+}
+
+.top .subtitle {
+    color: var(--bright-yellow);
+    font-size: large;
+    font-weight: 700;
+}
+
+.bottom {
+    display: flex;
+    color: #fff;
+}
+
+.bottom p {
+    color: #fff;
+}
+
+.bottom .left {
+    width: 50%;
+    padding: 32px;
+    background-color: var(--cyan-darker);
+    border-bottom-left-radius: 8px;
+}
+
+.cost {
+    display: flex;
+    align-items: center;
+}
+
+.cost p:nth-child(1) {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.cost p:nth-child(2) {
+    padding-left: 8px;
+    color: hsl(0, 0%, 80%);
+}
+
+.signUpButton {
+    width: 100%;
+    background-color: var(--bright-yellow);
+    font-weight: 700;
+    padding: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpButton:hover {
+    background-color: hsl(71, 73%, 44%);
+}
+
+.bottom .right {
+    width: 50%;
+    padding: 32px;
+    background-color: var(--cyan);
+    border-bottom-right-radius: 8px;
+}
+
+.bottom .right p {
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    padding-left: 0.2rem;
+}
+
+@media only screen and (max-width: 620px) {
+    .boxContainer {
+        width: calc(100vw - 32px);
+    }
+    
+    .bottom {
+        flex-direction: column;
+    }
+
+    .bottom .left {
+        width: 100%;
+        border-bottom-left-radius: 0;
+    }
+
+    .bottom .right {
+        width: 100%;
+        border-bottom-left-radius: 8px;
+    }
+}
