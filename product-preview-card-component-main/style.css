@@ -18,6 +18,11 @@ body {
     width: 100vw;
     background-color: var(--body-bg-color);
     font-family: 'Montserrat', sans-serif;
+    
+}
+
+main {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,6 +95,16 @@ h1 {
     padding-left: 10px;
     color: #fff;
     font-weight: bold;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    padding-left: 0.2rem;
 }
 
 @media only screen and (max-width: 600px) {
