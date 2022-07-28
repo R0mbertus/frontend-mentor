@@ -81,7 +81,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 48px
+    gap: 48px;
+    margin-bottom: 2rem;
 }
 
 .box {
@@ -111,6 +112,10 @@ main {
 
 .box:nth-child(3) .top {
     background-image: url(images/testimonials-grid-section.png);
+}
+
+.box:nth-child(4) .top {
+    background-image: url(images/tip-calculator-app.png);
 }
 
 .box .bottom {

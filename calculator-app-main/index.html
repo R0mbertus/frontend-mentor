@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="top">
+          <h2>calc</h2>
+          <div class="theme-toggle">
+            <div class="top-row">
+              <p class="title">1</p>
+              <p class="title">2</p>
+              <p class="title">3</p>
+            </div>
+            <div class="bottom-row">
+              <form class="themes-slider">
+                <label for="slider">THEME</label>
+                <input type="range" name="slider" min="1" max="3" id="slider">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="screen">
+          <h1>1,234</h1>
+        </div>
+        <div class="numpad">
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="smallkey"></div>
+          <div class="bigkey"></div>
+          <div class="bigkey"></div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
