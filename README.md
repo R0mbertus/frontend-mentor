@@ -1,4 +1,4 @@
-# FrontendMentor
+# frontend-mentor
 My solutions to Frontend Mentor exercises
 
 Link to github page with exercises:
