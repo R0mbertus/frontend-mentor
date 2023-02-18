@@ -86,7 +86,7 @@ main {
 }
 
 .box {
-    width: min(300px, 30vw);
+    width: min(300px, 90vw);
     height: 400px;
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

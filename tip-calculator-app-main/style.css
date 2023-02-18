@@ -177,3 +177,19 @@ input[type=number] {
 .result button:active {
     background-color: var(--light-grayish-cyan);
 }
+
+@media only screen and (max-width: 800px) {
+    .calc-container {
+        flex-direction: column;
+        height: 90%;
+        width: 90%;
+    }
+
+    .calc {
+        width: 100%;
+    }
+
+    .result {
+        width: 100%;
+    }
+}
